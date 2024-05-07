@@ -14,6 +14,14 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	routeRules: {
+		"/": { prerender: true },
+		"/about": { prerender: true },
+		"/contact": { prerender: true },
+		"/project": { prerender: true },
+		"/resume": { prerender: true },
+		"/login": { prerender: true },
+	},
 	supabase: {
 		redirect: true,
 		redirectOptions: {
