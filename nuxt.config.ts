@@ -16,8 +16,16 @@ export default defineNuxtConfig({
 	},
 	nitro: {
 		prerender: {
-			ignore: ["/project", "/about", "/resume", "/contact"],
+			routes: ["/", "/about", "/contact", "/project", "/resume"],
 		},
+	},
+	routeRules: {
+		"/": { prerender: true },
+		"/about": { prerender: true },
+		"/contact": { prerender: true },
+		"/project": { prerender: true },
+		"/resume": { prerender: true },
+		"/login": { prerender: true },
 	},
 	supabase: {
 		redirect: true,
