@@ -1,5 +1,5 @@
 <script setup>
-const supabase = useSupabaseClient();
+// const supabase = useSupabaseClient();
 
 // const { data: projects } = await useAsyncData(async () => {
 // 	const { data } = await supabase.from("projects").select("*");

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const supabase = useSupabaseClient();
+// const supabase = useSupabaseClient();
 
 // const project = reactive({
 // 	name_ch: "哇寶",
@@ -10,15 +10,15 @@ const supabase = useSupabaseClient();
 // 	tags: ["多規格"],
 // });
 
-const { data: projects } = await useAsyncData(async () => {
-	const { data } = await supabase.from("projects").select("*");
-	return data;
-});
+// const { data: projects } = await useAsyncData(async () => {
+// 	const { data } = await supabase.from("projects").select("*");
+// 	return data;
+// });
 </script>
 <template>
 	<div class="">
 		Project Page
-		{{ projects }}
+		<!-- {{ projects }} -->
 	</div>
 </template>
 <style lang="scss" scoped></style>
