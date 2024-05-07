@@ -6,12 +6,12 @@ const supabase = useSupabaseClient();
 // 	return data;
 // });
 
-const projects = ref([]);
+// const projects = ref([]);
 
-onMounted(async () => {
-	const { data, error } = await supabase.from("projects").select("*");
-	projects.value = data;
-});
+// onMounted(async () => {
+// 	const { data, error } = await supabase.from("projects").select("*");
+// 	projects.value = data;
+// });
 </script>
 <template>
 	<div>
