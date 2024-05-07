@@ -1,0 +1,20 @@
+:root {
+	--color-background--light: #eceef4;
+	--color-background--dark: #161c27;
+
+	--color-primary: #161c27;
+}
+
+body {
+	margin: 0;
+	color: var(--color-primary);
+	background-color: light-dark(
+		var(--color-background--light),
+		var(--color-background--dark)
+	);
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-primary);
+}
