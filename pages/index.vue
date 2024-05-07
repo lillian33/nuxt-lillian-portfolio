@@ -15,7 +15,7 @@ const supabase = useSupabaseClient();
 </script>
 <template>
 	<div>
-		{{ projects }}
+		<!-- {{ projects }} -->
 	</div>
 </template>
 <style lang="scss" scoped></style>
