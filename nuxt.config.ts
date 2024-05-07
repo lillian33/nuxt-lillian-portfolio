@@ -14,6 +14,16 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	supabase: {
+		redirect: true,
+		redirectOptions: {
+			login: "/login",
+			callback: "/confirm",
+			include: undefined,
+			exclude: ["/", "/project", "/about", "/resume", "/contact"],
+			cookieRedirect: false,
+		},
+	},
 	css: ["~/assets/scss/main.scss"],
-	modules: ["@unocss/nuxt"],
+	modules: ["@unocss/nuxt", "@nuxtjs/supabase"],
 });

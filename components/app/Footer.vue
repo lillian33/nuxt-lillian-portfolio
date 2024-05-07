@@ -49,7 +49,7 @@ const contactList = ref([
 	}
 
 	&-inner {
-		--uno: "pt-32 flex";
+		--uno: "pt-32 pb-68 flex";
 	}
 
 	.copyright {
